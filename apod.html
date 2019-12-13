@@ -1,0 +1,18 @@
+<div id="apodContent"></div>
+
+<div class="card">
+  <img src="https://api.nasa.gov/planetary/apod?api_key=nxtMjihbq1ZPBiPcUKOym6IlVMvD4bEeNvJTbS1l" alt="Picture" style="width:100%">
+  <div class="container">
+    <h4><b>Our Changing Planet</b></h4>
+    <p>By NASA</p>
+  </div>
+</div>
+
+<script>
+  let url = "https://api.nasa.gov/planetary/apod?api_key=nxtMjihbq1ZPBiPcUKOym6IlVMvD4bEeNvJTbS1l";
+ 
+  $.get(url, (response) => {
+    console.log(response);
+  })
+
+</script>
